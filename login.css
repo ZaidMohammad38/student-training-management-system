@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #b993f5, #d9c7fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN CARD */
+#main-container {
+    width: 900px;
+    height: 540px;
+    display: flex;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* LEFT IMAGE PANEL */
+#left-panel {
+    width: 50%;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#left-panel h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+#left-panel p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#left-panel a {
+    color: #b993f5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* RIGHT FORM */
+#login-container {
+    width: 50%;
+    background: #fff;
+    padding: 40px;
+}
+
+#login-container h1 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+#login-container h1::after {
+    content: "Login to your account";
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-top: 6px;
+}
+
+/* FORM */
+form {
+    margin-top: 28px;
+}
+
+form div {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #a07be9;
+}
+
+.error {
+    font-size: 11px;
+    color: #a07be9;
+    position: absolute;
+    bottom: -14px;
+}
+
+/* BUTTONS */
+.btn-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+button {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:first-child {
+    background: #a07be9;
+    color: #fff;
+}
+
+button:last-child {
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+}
+
+button:first-child:hover {
+    background: #8f66df;
+}
+
+/* LINK */
+.link {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.link a {
+    color: #a07be9;
+    font-weight: 600;
+    text-decoration: none;
+}

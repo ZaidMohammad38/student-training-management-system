@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div id="main-container">
+
+        <!-- LEFT IMAGE PANEL -->
+        <div id="left-panel">
+            <h2>Welcome Back</h2>
+            <p>
+                Login to continue your journey with us.
+                <br>
+                <a href="#">Learn more</a>
+            </p>
+        </div>
+
+        <!-- RIGHT LOGIN FORM -->
+        <div id="login-container">
+            <h1>Login</h1>
+
+            <form>
+                <div>
+                    <input type="text" id="user" placeholder="Username">
+                    <span id="usererror" class="error"></span>
+                </div>
+
+                <div>
+                    <input type="password" id="pass" placeholder="Password">
+                    <span id="passerror" class="error"></span>
+                </div>
+
+                <div class="btn-group">
+                    <button type="submit">Login</button>
+                    <button type="button">Cancel</button>
+                </div>
+
+                <div class="link">
+                    Don’t have an account?
+                    <a href="register.html">Register</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div id="left_container"></div>
+    <div id="reg-container">
+        <h1>Register page</h1>
+        <form action="">
+            <div>
+                <label for="fn">First Name</label>
+                <input type="text" id="fn" placeholder="First Name">
+                <span id="firsterror" class="error"></span>
+            </div>
+            <div>
+                <label for="ln">Last Name</label>
+                <input type="text" id="ln" placeholder="last Name">
+                <span id="lasterror" class="error"></span>
+            </div>
+            <div>
+                <label for="pass">password</label>
+                <input type="text" id="pass" placeholder="password">
+                <span id="passerror" class="error"></span>
+            </div>
+            <div>
+                <label for="cp">confirm password</label>
+                <input type="text" id="cp" placeholder="confirm password">
+                <span id="cperror" class="error"></span>
+            </div>
+            <div>
+                <label for="mail">E-mail</label>
+                <input type="text" id="mail" placeholder="E-mail">
+                <span id="mailerror" class="error"></span>
+            </div>
+            <div>
+                <label for="num">Number</label>
+                <input type="text" id="num" placeholder="Number">
+                <span id="numerror" class="error"></span>
+            </div>
+            <div>
+                <button>Register</button>
+                <button>Cancel</button>
+            </div>
+            <div>
+                already have an acccount?<a href="login.html">Login</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+
+</html>

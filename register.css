@@ -1,0 +1,186 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== Page Background ===== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #b993f5, #d9c7fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== Card Wrapper ===== */
+#left_container,
+#reg-container {
+    height: 540px;
+}
+
+/* ===== Left Image Panel ===== */
+#left_container {
+    width: 460px;
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px 0 0 14px;
+    padding: 48px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#left_container::before {
+    content: "Welcome";
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+#left_container::after {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\A Aenean suspendisse aliquam varius rutrum purus.\A maecenas ac Learn more";
+    white-space: pre-line;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e5e5e5;
+}
+
+/* ===== Right Form Panel ===== */
+#reg-container {
+    width: 460px;
+    background: #ffffff;
+    border-radius: 0 14px 14px 0;
+    padding: 36px 44px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Heading ===== */
+#reg-container h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #222;
+    position: relative;
+    bottom: 20px;
+}
+
+#reg-container h1::after {
+    content: "Create your account. It’s free and only take a minute";
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-top: 6px;
+    font-weight: normal;
+}
+
+/* ===== Form ===== */
+form {
+    margin-top: 26px;
+    position: relative;
+    bottom: 15px;
+}
+/* ===== Input Wrapper ===== */
+form div {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+/* ===== First + Last Name SIDE BY SIDE (important fix) ===== */
+form div:nth-child(1),
+form div:nth-child(2) {
+    width: 100%;
+    display: inline-block;
+}
+
+form div:nth-child(1) {
+    margin-right: 4%;
+}
+
+/* Hide labels (like screenshot) */
+label {
+    display: none;
+}
+
+/* ===== Inputs ===== */
+input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    font-size: 14px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+input:focus {
+    border-color: #a07be9;
+}
+
+/* ===== Error Messages ===== */
+.error {
+    font-size: 11px;
+    color: #a07be9;
+    position: absolute;
+    bottom: -14px;
+    left: 2px;
+}
+
+/* ===== Buttons (Register + Cancel) ===== */
+form div:nth-last-child(2) {
+    margin-top: 22px;
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    flex: 1;
+    padding: 13px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+/* Register Button */
+button:first-child {
+    background: #a07be9;
+    color: white;
+}
+
+button:first-child:hover {
+    background: #8f66df;
+}
+
+/* Cancel Button */
+button:last-child {
+    background: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+button:last-child:hover {
+    background: #e2e2e2;
+}
+
+/* ===== Login Text ===== */
+form div:last-child {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+form div:last-child a {
+    color: #a07be9;
+    text-decoration: none;
+    font-weight: 600;
+}
